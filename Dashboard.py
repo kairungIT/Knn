@@ -18,3 +18,4 @@ st.write(df.shape)
 
 df2 = df.groupby('species')['body_mass_g'].mean()
 st.write(df2)
+st.bar_chart(df2)
