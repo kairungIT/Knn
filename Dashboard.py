@@ -111,4 +111,4 @@ if img_file_buffer is not None:
 
     # Check the shape of torch_img:
     # Should output shape: torch.Size([channels, height, width])
-    st.write(torch_img.shape)
+    #st.write(torch_img.shape)
