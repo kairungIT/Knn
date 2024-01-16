@@ -23,7 +23,7 @@ st.write(df3.head())
 st.bar_chart(df2)
 
 genre = st.radio(
-     "What's your favorite movie genre",
-     ('Comedy', 'Drama', 'Documentary'))
+     "คุณชอบหนังแบบไหน",
+     ('ตลก', 'เศร้า', 'สารคดี'))
 
-st.write(f"You selected {genre}")
+st.write(f"หนังที่คุณชอบ คือ {genre}")
