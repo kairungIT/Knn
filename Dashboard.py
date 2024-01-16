@@ -12,14 +12,9 @@ df = pd.DataFrame({
 # สร้างแดชบอร์ด
 st.title("ยอดขายประจำปี")
 
+st.header("Header")
+st.subheader('Raw data')
+
 # แสดงข้อมูลในตาราง
 st.write(df.head(10))
 
-# แสดงข้อมูลในแผนภูมิ
-fig = px.line(df, x="ปี", y="ยอดขาย", color="ภูมิภาค")
-st.plotly_chart(fig)
-
-# แสดงตัวเลือกเพิ่มเติม
-options = ["เอเชีย", "ยุโรป", "อเมริกา"]
-region = st.selectbox("ภูมิภาคที่คุณต้องการดูข้อมูลยอดขาย", options)
-st.write("ยอดขายประจำปีของภูมิภาค", region, "คือ", df[df["ภูมิภาค"] == region]["ยอดขาย"].sum())
