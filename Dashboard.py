@@ -7,6 +7,7 @@ import torch
 st.title("ทดสอบการใช้งาน Streamlit")
 
 st.image('./img/kairung.jpg')
+
 st.header("Header")
 st.subheader('Raw data')
 
