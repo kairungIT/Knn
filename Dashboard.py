@@ -19,7 +19,7 @@ st.write(df.shape)
 df2 = df.groupby('species')['body_mass_g'].mean()
 df3=df2.T
 st.write(df2)
-st.write(df3)
+st.write(df3.head(2))
 st.bar_chart(df2)
 
 st.bar_chart(df2,x="col1", y=["col2", "col3"], color=["#FF0000", "#0000FF"])
