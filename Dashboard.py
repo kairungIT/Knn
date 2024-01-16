@@ -15,3 +15,6 @@ url = "https://raw.githubusercontent.com/mwaskom/seaborn-data/master/penguins.cs
 df = pd.read_csv(url)
 st.write(df.head(10))
 st.write(df.shape)
+
+df2 = df.groupby('species')['body_mass_g'].mean()
+st.write(df2)
