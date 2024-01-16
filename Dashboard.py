@@ -28,10 +28,17 @@ genre = st.radio(
 
 st.write(f"หนังที่คุณชอบ คือ {genre}")
 
-import streamlit as st
-
+# select
 option = st.selectbox(
     'How would you like to be contacted?',
     ('Email', 'Home phone', 'Mobile phone'))
 
 st.write('You selected:', option)
+
+# Multi select
+options = st.multiselect(
+    'What are your favorite colors',
+    ['Green', 'Yellow', 'Red', 'Blue'],
+    ['Yellow', 'Red'])
+
+st.write('You selected:', options)
