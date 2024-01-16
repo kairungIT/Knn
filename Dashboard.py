@@ -14,3 +14,4 @@ url = "https://raw.githubusercontent.com/mwaskom/seaborn-data/master/penguins.cs
 
 df = pd.read_csv(url)
 st.write(df.head(10))
+st.write(df.shape)
