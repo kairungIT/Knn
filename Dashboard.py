@@ -22,4 +22,8 @@ st.write(df2)
 st.write(df3.head())
 st.bar_chart(df2)
 
-st.bar_chart(df2,x="species", y=["body_mass_g"], color=["#FF0000", "#0000FF"])
+genre = st.radio(
+     "What's your favorite movie genre",
+     ('Comedy', 'Drama', 'Documentary'))
+
+st.write(f"You selected {genre}")
