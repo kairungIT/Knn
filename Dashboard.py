@@ -13,7 +13,7 @@ df = pd.DataFrame({
 st.title("ยอดขายประจำปี")
 
 # แสดงข้อมูลในตาราง
-st.table(df.to_html())
+st.write(df.head(10))
 
 # แสดงข้อมูลในแผนภูมิ
 fig = px.line(df, x="ปี", y="ยอดขาย", color="ภูมิภาค")

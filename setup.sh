@@ -8,6 +8,6 @@ email = \"kairung@webmail.npru.ac.th\"\n\
 echo "\
 [server]\n\
 headless = true\n\
-enableCORS=false\n\
+enableCORS=false\n\D
 port = $PORT\n\
 " > ~/.streamlit/config.toml
